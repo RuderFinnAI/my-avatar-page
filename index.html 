@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Interactive Avatar</title>
+    <script src="https://unpkg.com/@heygen/streaming-avatar-widget@latest/dist/index.global.js"></script>
+    <style>
+      body {
+        background: #111;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="heygen-avatar-widget" style="width: 720px; height: 405px;"></div>
+
+    <script>
+      HeyGenWidget.init({
+        elementId: "heygen-avatar-widget",
+        avatarId: "ebeb16f2df224706b1ff928807f00ed8", // your avatar
+        heygenApiKey: "YNjM5MjZiNDRlZWRlNDM4N2JmYWEyNGUxOTMwNzQzYWQtMTc0NTAxNzY3Nw==", 
+        voiceChat: false,
+        textInput: true,
+        showInputBox: true,
+      });
+    </script>
+  </body>
+</html>
